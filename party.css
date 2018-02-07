@@ -1,0 +1,16 @@
+body {
+    font-family: cursive !important;
+}
+.profileImg {
+    position: absolute; 
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.modal-content {
+    background-color: #bf4b4b;
+}
+.halfWidth {
+    width: 50%;
+}

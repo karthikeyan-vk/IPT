@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PARTY</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="party.css">  
+  <script src="party.js"></script>
+</head>
+<body style="background-color:#bf4b4b;">
+
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col text-light" style="padding:30px 15px;">
+                <h2>PARTY TIME</h2>
+            </div>
+        </div>
+        <!--div class="row">
+            <div class="col text-center text-light" style="padding:15px;">
+                <h2>Welcome Back</h2>
+                <h1>Dinesh</h1>
+            </div>
+        </div-->
+        <div class="row">
+            <div class="col" style="padding:15px;">
+                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#login" style="width:190px;">
+                    Login
+                </button>
+                <div class="modal fade" id="login">
+                    <div class="modal-dialog">
+                        <div class="modal-content text-light">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Login</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="usr">User Name</label>
+                                    <input type="text" class="form-control" id="usr">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Password</label>
+                                    <input type="password" class="form-control" id="pwd">
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-outline-light halfWidth">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" style="padding:15px;">
+                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#signUp" style="width:190px;">
+                    Sign Up
+                </button>
+                <div class="modal fade" id="signUp">
+                    <div class="modal-dialog">
+                        <div class="modal-content text-light">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Sign Up</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="usr">User Name</label>
+                                    <input type="text" class="form-control" id="usr">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Password</label>
+                                    <input type="password" class="form-control" id="pwd">
+                                </div>
+                                <div class="form-group">
+                                    <label for="repwd">Retype Password</label>
+                                    <input type="password" class="form-control" id="repwd">
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-outline-light halfWidth">Sign Up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" style="height:100px;">
+                <img class="img-fluid rounded-circle center-block profileImg" src="party.gif" alt="test" width="100" height="100">
+            </div>
+        </div>
+        <div class="row" style="background-color:#424040; padding:100px 15px 15px;">
+            <div class="col text-light">
+                <blockquote class="blockquote">
+                    <p>When pessimist, optimist and realist where arguing about a pint of beer, I drank it.</p>
+                    <footer class="blockquote-footer text-light">opportunist</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
