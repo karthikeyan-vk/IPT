@@ -1,6 +1,24 @@
 body {
     font-family: cursive !important;
 }
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.customBgColorRd {
+    background-color:#bf4b4b;
+}
+.customBgColorBlk {
+    background-color:#424040;
+}
+.customBgImg1 {
+    background-image: url('/Dinesh/party/fondo-navideno-con-luces_1053-51.jpg');
+    background-size: 100% 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+}
 .profileImg {
     position: absolute; 
     top: 50px;
@@ -8,9 +26,46 @@ body {
     right: 0;
     margin: 0 auto;
 }
-.modal-content {
-    background-color: #bf4b4b;
-}
 .halfWidth {
     width: 50%;
+}
+.menus {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 5px 15px;
+    z-index: 1;
+}
+.mainTabs {
+    height: 600px;
+}
+.menus img {
+    width: 50px;
+    height: 50px;
+    background-size: 100% 100%;
+}
+.tabTitle {
+    padding: 20px;
+}
+.passes {
+    height: 200px;
+    padding-bottom: 15px;
+}
+.passes  img{
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+}
+.passesBgImg {
+    background-image: url('/Dinesh/party/images.jpg');
+    background-size: 100% 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+}
+#clubPasses {
+    height: 80%;
+}
+.carousel-inner, .carousel-item, .card {
+    height: 100%;
 }

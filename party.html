@@ -20,12 +20,12 @@
   <link rel="stylesheet" href="party.css">  
   <script src="party.js"></script>
 </head>
-<body style="background-color:#bf4b4b;">
+<body class="customBgColorRd">
 
     <div class="container-fluid text-center">
         <div class="row">
             <div class="col text-light" style="padding:30px 15px;">
-                <h2>PARTY TIME</h2>
+                <h2>Party Time</h2>
             </div>
         </div>
         <!--div class="row">
@@ -41,23 +41,23 @@
                 </button>
                 <div class="modal fade" id="login">
                     <div class="modal-dialog">
-                        <div class="modal-content text-light">
+                        <div class="modal-content text-light customBgColorRd">
                             <div class="modal-header">
                                 <h4 class="modal-title">Login</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
                             </div>
                             <div class="modal-body">
-                                <div class="form-group">
-                                    <label for="usr">User Name</label>
-                                    <input type="text" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="pwd">Password</label>
-                                    <input type="password" class="form-control" id="pwd">
-                                </div>
-                                <div class="form-group">
-                                    <button type="button" class="btn btn-outline-light halfWidth">Login</button>
-                                </div>
+                                <form method="get" action="/Dinesh/party/home.html">
+                                    <div class="form-group">
+                                        <label for="usr">User Name</label>
+                                        <input type="text" class="form-control" id="usr">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pwd">Password</label>
+                                        <input type="password" class="form-control" id="pwd">
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-light halfWidth" id="loginBtn">Login</button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -71,27 +71,27 @@
                 </button>
                 <div class="modal fade" id="signUp">
                     <div class="modal-dialog">
-                        <div class="modal-content text-light">
+                        <div class="modal-content text-light customBgColorRd">
                             <div class="modal-header">
                                 <h4 class="modal-title">Sign Up</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
                             </div>
                             <div class="modal-body">
-                                <div class="form-group">
-                                    <label for="usr">User Name</label>
-                                    <input type="text" class="form-control" id="usr">
-                                </div>
-                                <div class="form-group">
-                                    <label for="pwd">Password</label>
-                                    <input type="password" class="form-control" id="pwd">
-                                </div>
-                                <div class="form-group">
-                                    <label for="repwd">Retype Password</label>
-                                    <input type="password" class="form-control" id="repwd">
-                                </div>
-                                <div class="form-group">
-                                    <button type="button" class="btn btn-outline-light halfWidth">Sign Up</button>
-                                </div>
+                                <form method="get" action="/Dinesh/party/home.html">
+                                    <div class="form-group">
+                                        <label for="usr">User Name</label>
+                                        <input type="text" class="form-control" id="usr">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pwd">Password</label>
+                                        <input type="password" class="form-control" id="pwd">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="repwd">Retype Password</label>
+                                        <input type="password" class="form-control" id="repwd">
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-light halfWidth">Sign Up</button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -103,7 +103,7 @@
                 <img class="img-fluid rounded-circle center-block profileImg" src="party.gif" alt="test" width="100" height="100">
             </div>
         </div>
-        <div class="row" style="background-color:#424040; padding:100px 15px 15px;">
+        <div class="row customBgColorBlk" style="padding:100px 15px 15px;">
             <div class="col text-light">
                 <blockquote class="blockquote">
                     <p>When pessimist, optimist and realist where arguing about a pint of beer, I drank it.</p>
