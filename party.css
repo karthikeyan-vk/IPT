@@ -1,5 +1,5 @@
 body {
-    font-family: cursive !important;
+    /*font-family: cursive !important;*/
 }
 .hide {
     display: none;
@@ -14,12 +14,12 @@ body {
     background-color:#424040;
 }
 .customBgImg1 {
-    background-image: url('/Dinesh/party/fondo-navideno-con-luces_1053-51.jpg');
+    background-image: url('fondo-navideno-con-luces_1053-51.jpg');
     background-size: 100% 100%;
-    height: 300px;
+    height: 250px;
     background-repeat: no-repeat;
 }
-.profileImg {
+.displayImg {
     position: absolute; 
     top: 50px;
     left: 0;
@@ -30,7 +30,7 @@ body {
     width: 50%;
 }
 .menus {
-    height: 60px;
+    height: 50px;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -39,33 +39,111 @@ body {
 }
 .mainTabs {
     height: 600px;
+    padding: 15px;
 }
 .menus img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-size: 100% 100%;
 }
-.tabTitle {
-    padding: 20px;
+#clubsImg.active img {
+	content:url(clubs_Active.png);
 }
-.passes {
-    height: 200px;
-    padding-bottom: 15px;
+#chatImg.active img {
+	content:url(chat_Active.png);
 }
-.passes  img{
-    background-size: 100% 100%;
-    height: 100%;
-    width: 100%;
+#cabImg.active img {
+	content:url(cab_Active.png);
 }
-.passesBgImg {
-    background-image: url('/Dinesh/party/images.jpg');
+.tabTitleImg {
+	background-image: url('fondo-navideno-con-luces_1053-51.jpg');
     background-size: 100% 100%;
     height: 200px;
     background-repeat: no-repeat;
+}
+.passes {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #c7c3c3;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+.passes  img{
+    background-size: 100% 100%;
+    height: 200px;
+    width: 100%;
+	padding: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: white;
+	margin-bottom: 5px;
+}
+.passDescCont {
+	padding: 5px;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 5px;
+	font-weight: bold;
+}
+.passDesc, .passPrice {
+	padding: 5px 0;
 }
 #clubPasses {
     height: 80%;
 }
 .carousel-inner, .carousel-item, .card {
     height: 100%;
+}
+#header {
+    height: 60px;
+    z-index: 99;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.gridListCont, .filterCont {
+	width: 30px;
+    height: 30px;
+    float: left;
+}
+.gridListCont.grid {
+	margin-right: 10px;
+	background-image: url("grid.png");
+	background-size: 100% 100%;
+}
+.gridListCont.list {
+	margin-right: 10px;
+	background-image: url("list.png");
+	background-size: 100% 100%;
+}
+.filterCont {
+	background-image: url("filter.png");
+	background-size: 100% 100%;
+}
+.overlay{
+	height: 80px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+	background-color: #c7c3c3;
+	opacity: 0.8;
+	padding: 20px;
+}
+.overlay button {
+	width: 60%;
+	height: 40px;
+}
+.chatCont {
+	height: 80px;
+	padding: 10px;
+	margin-bottom: 5px;
+    border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.chatImgCont {
+	margin-right: 20px;
+}
+.chatName, .chatMsg {
+	height: 50%;
+	line-height: 30px;
+}
+.chatName {
+	font-weight: bold;
 }

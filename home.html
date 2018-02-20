@@ -21,85 +21,76 @@
 </head>
 <body class="customBgColorRd" style="padding-bottom:60px;">
     <div class="container-fluid">
-        <!--div class="alert alert-success alert-dismissable" style="margin-top:16px;">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            Welcome User
-        </div-->
-        <div class="row customBgImg1 welcomeCont" style="padding-top:150px;">
+		<header id="header" class="fixed-top customBgColorRd hide">
+			<nav class="navbar navbar-toggleable navbar-light" role="navigation">
+                <button class="navbar-toggler navbar-toggler-right hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="tabTitle text-light text-center">
+                    <h2>Party</h2>
+                </div>
+                <!--a class="navbar-brand" href="/" title="Hubble" rel="home">
+                    <img src="https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg" height="35" alt="Hubble" class="d-inline-block align-top">
+                </a-->
+				<div class="filterWrap">
+					<div class="gridListCont grid"></div>
+					<div class="filterCont"></div>
+				</div>
+                <div class="collapse navbar-collapse justify-content-end" id="mainNavbarCollapse">
+                    <ul class="navbar-nav my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/news">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/jobs">Jobs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/news">Blog</a></li>
+                    </ul>
+                </div>
+			</nav>
+		</header>
+        <div class="row customBgImg1 welcomeCont" style="padding-top:120px;">
             <div class="col text-center text-light">
                 <h2>Welcome</h2>
                 <h1>Dinesh</h1>
             </div>
         </div>
-        <div class="row customBgColorRd welcomeCont" style="padding:80px 15px;">
+        <div class="row customBgColorRd welcomeCont" style="padding-bottom:20px;">
+			<div class="col-12 text-center">
+                <img class="img-fluid rounded-circle center-block profileImg" src="displayImage.png" alt="display picture" width="100" height="100" style="padding:20px 0;">
+            </div>
             <div class="col text-light text-center">
                 <blockquote class="blockquote">
-                    <p>When pessimist, optimist and realist where arguing about a pint of beer, I drank it.</p>
-                    <footer class="blockquote-footer text-light">opportunist</footer>
+                    <p>I believe that if life gives you lemons, you should make lemonade... And try to find somebody whose life has given them vodka, and have a party.</p>
+                    <footer class="blockquote-footer text-light">unknown</footer>
                 </blockquote>
             </div>
         </div>
         <div class="row menus customBgColorBlk text-light text-center">
-            <div class="col nav-item menuLinks" ref="clubs">
+            <div class="col menuLinks" id="clubsImg" ref="clubs">
                 <img src="clubs.png" alt="clubs">
             </div>
-            <div class="col nav-item menuLinks" ref="chat">
+            <div class="col menuLinks" id="chatImg" ref="chat">
                 <img src="chat.png" alt="chat">
             </div>
-            <div class="col nav-item menuLinks" ref="cab">
+            <div class="col menuLinks" id="cabImg" ref="cab">
                 <img src="cab.png" alt="cab">
             </div>
         </div>
         <div class="container mainTabs hide" id="clubs">
-            <div class="tabTitle text-light text-center">
-                <h2>Passes</h2>
-            </div>
-            <div class="row" style="padding-bottom:60px;">
-                <div class="col-12 col-md-6 passes">
-                    <img src="pass6.jpg" alt="passes">
-                </div>
-                <div class="col-12 col-md-6 passes">
-                    <img src="pass7.jpg" alt="passes">
-                </div>
-                <div class="col-12 col-md-6 passes">
-                    <img src="pass8.jpg" alt="passes">
-                </div>
-                <div class="col-12 col-md-6 passes">
-                    <img src="pass9.jpg" alt="passes">
-                </div>
-                <div class="col-12 col-md-6 passes">
-                    <img src="pass5.jpg" alt="passes">
-                </div>
-                <div class="col-12 col-md-6 passes">
-                    <img src="pass1.jpg" alt="passes">
-                </div>
-                <div class="col-12 col-md-6 passes">
-                    <img src="pass2.jpg" alt="passes">
-                </div>
-                <div class="col-12 col-md-6 passes">
-                    <img src="pass3.jpg" alt="passes">
-                </div>
-                <div class="col-12 col-md-6 passes">
-                    <img src="pass4.jpg" alt="passes">
-                </div>
-                <div class="col-12 col-md-6 passes">
-                    <img src="pass10.jpg" alt="passes">
-                </div>
-            </div>
+            <div class="row clubWrap" style="padding-bottom:60px;"></div>
         </div>
         <div class="container mainTabs hide" id="chat">
-            chat
+            <div class="chatWrap" style="padding-bottom:60px;"></div>
         </div>
         <div class="container mainTabs hide" id="cab">
-            <div class="tabTitle text-light text-center">
+			<div class="cabWrap" style="padding-bottom:60px;"></div>
+            <!--div class="tabTitle text-light text-center">
                 <h2>Passes</h2>
             </div>
             <div id="clubPasses" class="carousel slide" data-ride="carousel">
-                <!--ul class="carousel-indicators">
+                <ul class="carousel-indicators">
                     <li data-target="#clubPasses" data-slide-to="0" class="active"></li>
                     <li data-target="#clubPasses" data-slide-to="1"></li>
                     <li data-target="#clubPasses" data-slide-to="2"></li>
-                </ul-->
+                </ul>
                 <div class="carousel-inner text-light text-center">
                     <div class="carousel-item active">
                         <div class="card customBgColorBlk">
@@ -129,7 +120,7 @@
                 <a class="carousel-control-next" href="#clubPasses" data-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </a>
-            </div>
+            </div-->
         </div>
     </div>
 </body>
