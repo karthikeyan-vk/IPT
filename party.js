@@ -23,9 +23,11 @@ $(document).ready(function() {
 		if($(this).hasClass("grid")) {
 			$(this).removeClass("grid").addClass("list");
 			$(".passes").addClass("col-6").removeClass("col-12");
+            $(".passes img").css("height", "150px");
 		} else if($(this).hasClass("list")) {
 			$(this).removeClass("list").addClass("grid");
 			$(".passes").addClass("col-12").removeClass("col-6");
+            $(".passes img").css("height", "200px");
 		}
 	});
     var renderClubs = function() {
