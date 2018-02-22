@@ -139,11 +139,91 @@ body {
 }
 .chatImgCont {
 	margin-right: 20px;
+	position: absolute;
 }
 .chatName, .chatMsg {
 	height: 50%;
 	line-height: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.chatNameCont {
+	width: 100%;
+	padding-right: 40px;
+	padding-left: 80px;
 }
 .chatName {
 	font-weight: bold;
+}
+.chatCont {
+	position: relative;
+}
+.buzzIcon {
+	width: 30px;
+    height: 30px;
+    background-image: url("buzz.png");
+	background-size: 100% 100%;
+    float: right;
+    position: absolute;
+    right: 10px;
+	top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.buzzer {
+	height: 300px;
+	background-image: url(buzzing.gif);
+    background-size: 100% 100%;
+	border: 4px solid white;
+}
+.buzzModalClose {
+	margin: 0 auto;
+	width: 50%;
+}
+.chatSearchWrap {
+	position: relative;
+	margin-bottom: 10px;
+}
+.searchIcon {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-image: url(search.png);
+	background-size: 100% 100%;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	margin-left: 10px;
+}
+#search {
+	width: 100%;
+	height: 35px;
+    border-radius: 30px;
+	padding-left: 50px;
+}
+.chatOptionCont {
+	width: 50%;
+}
+.chatOptionCont .listOption {
+	width: 50%;
+	border-top-right-radius: 0;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 30px;
+	border: 1px solid white;
+	float: left;
+}
+.chatOptionCont .chatOption {
+	width: 50%;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 0;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 0;
+	border: 1px solid white;
+	float: left;
+}
+.newMsgBadge {
+	position: absolute;
+	right: 0;
 }

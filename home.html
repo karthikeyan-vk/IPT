@@ -26,6 +26,10 @@
                 <button class="navbar-toggler navbar-toggler-right hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+				<div class="chatOptionCont hide">
+					<button class="btn customBgColorBlk listOption text-light" type="button">List</button>
+					<button class="btn chatOption active" type="button">Chat</button>
+				</div>
                 <div class="tabTitle text-light text-center">
                     <h2>Party</h2>
                 </div>
@@ -78,6 +82,10 @@
             <div class="row clubWrap" style="padding-bottom:50px;"></div>
         </div>
         <div class="container mainTabs hide" id="chat">
+			<div class="row chatSearchWrap">
+				<div class="searchIcon"></div>
+				<input type="text" placeholder="Search" id="search">
+			</div>
             <div class="chatWrap" style="padding-bottom:50px;"></div>
         </div>
         <div class="container mainTabs hide" id="cab">
